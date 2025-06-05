@@ -1,5 +1,8 @@
 README TP PACKER
 
+Plugin Docker pour Packer nécessaire :
+packer plugins install github.com/hashicorp/docker
+
 Pour construire les images dockers des 3 services dont on a besoin, il faut se placer dans le répertoire "ubuntu-images-packer" et exécuter les commandes suivantes :
 
 packer build mongo.pkr.hcl
