@@ -26,4 +26,5 @@ docker run -d --name nginx-test -p 80:80 sha256:<le hash de l'image nginx>
 
 Précision : 
 
-Fail2Ban est bien installé sur les containers mais je n'arrive pas à le faire se lancer automatiquement au démarrage.
+- Fail2Ban est bien installé sur les containers mais je n'arrive pas à le faire se lancer automatiquement au démarrage (le script start.sh généré dans common.sh et lancé dans les fichier de build que j'ai laissé est sensé servir à cela, bien qu'inutile en l'état).
+- J'ai utilisé Ubuntu 20.04 car il contient des dépendances nécessaires installées par défaut pour que mongo, nginx et node fonctionnent correctement.
